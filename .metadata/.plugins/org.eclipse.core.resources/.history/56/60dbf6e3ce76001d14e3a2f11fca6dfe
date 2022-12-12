@@ -1,0 +1,6 @@
+package com.controller;
+
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
+public class ImageController {
+
+}

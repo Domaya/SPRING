@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context="http://www.springframework.org/schema/context"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+      http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<!-- 
+객체의 생성과 조립(주입)
+
+Spring은 자신만의 컨테이너를 제공 (Spring 전용 메모리 공간) 안에
+xml 또는 annotation을 통해 객체를 생성하고 조립하는 과정을 수행 (객체간 관계 설정)
+
+컨테이너 안 생성된 객체를 불러서 ... getbean() 함수
+
+IOC 컨테이너 (제어의 역전)
+프로그램의 제어 구조가 바뀜
+내가 주도했던 코드 >> Spring이 주체가 됨
+작은 단위의 부품을 만들어 놓고 조립하는 행위 (레고 블럭 ..)
+
+JAVA코드
+		MonitorViewer viewer = new MonitorViewer();
+		Recorder recorder = new Recorder();
+		viewer.setRecorder(recorder);
+ -->
+ 	<bean id="recorder" class="DI_Annotation_01.Recorder"></bean>
+	<bean id="monitorViewer" class="DI_Annotation_01.MonitorViewer">				
+		<property name="recorder">
+			<ref bean="recorder" />
+		</property>
+	</bean>
+<!-- 
+
+
+@Autowired > Type기반
+목적 : 의존관계를 자동설정할 때 사용하며 [타입을 이용]하여 의존하는 객체를 삽입해 준다. 
+그러므로 (IOC Container) 해당 타입의 빈객체가 존재하지 않거나 또는 2개 이상 존재할 경우 
+스프링은 예외를 발생시키게 된다.
+
+설정 위치 : 생성자, 필드, 메소드(굳이 setter메소드가 아니여도 된다)
+
+import org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor;
+*추가설정 : AutowiredAnnotationBeanPostProcessor 클래스를 빈으로 등록시켜줘야 한다. 
+해당 설정 대신에 <context:annotation-config> 태그를 사용해도 된다.
+ -->
+</beans>

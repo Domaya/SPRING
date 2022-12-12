@@ -1,0 +1,49 @@
+package ncontroller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+/*
+ *    
+   Annotation변경
+   
+   @controller
+   @RequestMapping
+   
+   하나의 컨트롤러를 만들라는 얘기 >> 이름 CustomerController로
+게시판 목록보기, 게시판 상세보기를 함수 매핑을 이용해서 완성
+
+@Controller
+class Board{
+	@RequestMapping("/list.do")
+	void listBoard(){
+	}
+	
+	@RequestMapping("/insert.do")
+	void insertBoard(){
+	}
+ */
+@Controller
+public class CustomerController {
+	
+	//		<a href="customer/notice.htm">고객센터</a>
+	
+	@RequestMapping("/customer/notice.htm")
+	public String noticelist() {
+		System.out.println("테스트");
+		return "notice.jsp"; //public String searchExternal()   view 주소
+	}
+	
+	
+	//	<a href="noticeDetail.htm?seq=${n.seq}"></a>
+	@RequestMapping("/customer/noticeDetail.htm")
+	public ModelAndView noticeDetail(@RequestParam(value="seq", defaultValue = "") String query) {
+		
+		System.out.println("param query: " + query);
+		
+		return new ModelAndView("customer/notice");
+	}
+	
+}

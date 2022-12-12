@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context="http://www.springframework.org/schema/context"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+      http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+
+<!-- 객체의 생성과 조립 -->
+<!-- id="객체 이름" >> Web에서는 ... >> id="url mapping 경로" -->
+
+<!-- 
+
+1. Tomcat 실행
+2. 클라이언트 요청 hello.do ...
+3. Spring에서 <url-pattern>*.do</url-pattern> 설정에 따라
+   3.1. DispatcherServlet 객체 생성 >> KEY Spring이 DispatcherServlet 가지고 놀 수 있는 IOC 컨테이너가 자동 생성
+   3.2. spring-servlet.xml read해서 >> IOC 컨테이너 안에 >> 객체 생성, 조립
+   3.3 약속 (*-servlet.xml)으로 >> spring-servlet.xml
+4. 컨테이너 안에 객체가 생성되고 주입이 되어 있음 ...
+5. hello.do에 대해 handler mapping 작업 >> 실행할 객체를 찾음 >> id="/hello.do" >> handleRequest 함수가 자동 실행
+
+ -->
+
+<!-- <bean id="/hello.do" class="com.controller.HelloController"></bean> -->
+
+<context:annotation-config />
+<bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+   <property name="prefix">
+      <value>/WEB-INF/views/</value>
+   </property>
+   <property name="suffix">
+      <value>.jsp</value>
+   </property>
+</bean>
+
+<!-- TEST 1 -->
+<bean id="helloController" class="com.controller.HelloController"></bean>
+
+<!-- TEST 2 -->
+<!-- 
+하나의 요청 주소를 전송 방식으로 구분 >> GET, POST
+화면, 서비스 처리 분리
+ -->
+<bean class="com.controller.NewArticleController"></bean> <!-- id는 필요 없음 객체만 있으면 됨 !! -->
+<bean class="com.service.ArticleService"></bean>
+
+<!-- TEST 3 -->
+<bean class="com.controller.OrderController"></bean>
+
+<!-- TEST 4 -->
+<bean class="com.controller.SearchController"></bean>
+
+<!-- TEST 5 -->
+<bean class="com.controller.CookieController"></bean>
+
+<!-- TEST 6 파일 업로드 -->
+<bean class="com.controller.ImageController"></bean>
+<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+   <property name="maxUploadSize" value="1048760"></property>
+   <property name="defaultEncoding" value="UTF-8"></property>
+</bean>
+
+<!--
+<property name="uploadTempDir" value="uploadTempDir"/>
+<bean id="uploadTempDir" class="org.springframework.core.io.FileSystemResource">
+<constructor-arg value="c:/temp/"/>
+</bean>
+-->
+
+
+</beans>

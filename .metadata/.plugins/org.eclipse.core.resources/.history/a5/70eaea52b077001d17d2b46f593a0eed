@@ -1,0 +1,85 @@
+package ncontroller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import dao.NoticeDao;
+import vo.Notice;
+
+
+@Controller
+public class CustomerController {
+	private NoticeDao noticsdao;
+	@Autowired
+	public void setNoticsdao(NoticeDao noticsdao) {
+		this.noticsdao = noticsdao;
+	}
+	
+	//게시판 리스트
+	@RequestMapping("/customer/notice.htm")
+	public ModelAndView noticelist(@RequestParam(value="pg", defaultValue = "1") String pg,
+			 												  @RequestParam(value ="f", defaultValue = "TITLE") String f,
+			 												  @RequestParam(value="p", defaultValue="%%") String p) {
+		//System.out.println("테스트");
+		
+		String page = pg;
+		String field = f;
+		String query = p;
+
+		List<Notice>  list = null;
+		
+		//System.out.println("pg : " + pg + " / f : " + f + " / query : " + p);
+		//DAO 작업
+		try {
+			list = noticsdao.getNotices(Integer.parseInt(page), field, query);
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		ModelAndView   mv = new ModelAndView();
+		mv.addObject("list", list);
+		mv.setViewName("notice.jsp");
+		
+		return  mv;
+	}
+	
+	//글 상세보기
+	@RequestMapping("/customer/noticeDetail.htm")
+	public ModelAndView noticeDetail(@RequestParam(value="seq", defaultValue = "") String query) {
+		
+		//System.out.println("param query: " + query);
+		String seq = query;
+		Notice notice = null;
+		try {
+			notice = noticsdao.getNotice(seq);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		ModelAndView  mv = new ModelAndView();
+		
+		mv.addObject("notice", notice);
+		mv.setViewName("noticeDetail.jsp");
+		
+		
+		return mv;
+	}
+	
+	//오됏다 굿 나는 이제 집감 누군데;;ㅋㅋㅋㅋㅋㅋ먼가 내가 내이름말하는거 왜 부끄러움 김재홍임
+	//역시 오빤 짱이얔ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ고생하구! 나 가봄월욜에바!!얍!!
+	
+	//글쓰기
+	//@RequestMapping("/noticeReg.htm")
+	@GetMapping(value="noticeReg.htm")
+	public String noticeReg() {
+			System.out.println("test");
+			return  "noticeReg.jsp";
+	}
+	
+}

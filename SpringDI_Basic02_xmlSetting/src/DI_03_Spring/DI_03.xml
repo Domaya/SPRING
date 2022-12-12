@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 
+객체의 생성과 조립
+java 코드에서 new 했던 작업 xml 하면 되요
+MessageBean_en messagebean_en = new MessageBean_en();
+MessageBean_kr messagebean_kr = new MessageBean_kr();
+-->
+	<bean id="messagebean" class="DI_03_Spring.MessageBean_en"></bean>	
+	
+</beans>

@@ -1,0 +1,16 @@
+package DI_10_Spring;
+
+import java.util.Properties;
+
+public class HelloApp {
+	public static void main(String[] args) {
+//		BookClient bookclient = new BookClient();
+//		
+//		Properties prop = new Properties();
+//		prop.setProperty("server", "192.168.0.29");
+//		prop.setProperty("connectiontimeout", "20");
+//		
+//		bookclient.setConfig(prop);
+		bookclient.connect();
+	}
+}

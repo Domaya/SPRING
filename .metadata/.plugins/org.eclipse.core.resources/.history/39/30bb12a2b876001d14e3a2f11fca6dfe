@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context="http://www.springframework.org/schema/context"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+      http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<!-- 객체의 생성과 조립 -->
+<!-- 지금까지는 id=객체이름 이었는데 WEB에서는.... >> url경로로 바뀜 ( mapping 경로 ) -->
+
+	<!-- 공통빈 -->
+	<context:annotation-config></context:annotation-config>
+	<bean id="InternalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/views/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+	<!-- TEST 1 -->
+	<bean id="helloController" class = "com.controller.HelloController"></bean>
+	
+	<!-- TEST 2 -->
+	<!--
+		하나의 요청주소(전송방식) GET, POST
+		화면, 서비스 처리 나누기 
+	 -->
+	 <bean class="com.controller.NewArticleController"></bean>
+	 <bean class="com.service.ArticleService"></bean>
+	 
+	 <!-- TEST 3 -->
+	 <bean class="com.controller.OrderController"></bean>
+</beans>

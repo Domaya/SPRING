@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;JoinController.java&apos; to &apos;SpringMVC_Basic06_WebSite_Annotation_jdbc_Template/src/ncontroller&apos;&#x0D;&#x0A;- Original project: &apos;SpringMVC_Basic06_WebSite_Annotation_jdbc_Template&apos;&#x0D;&#x0A;- Destination element: &apos;SpringMVC_Basic06_WebSite_Annotation_jdbc_Template/src/ncontroller&apos;&#x0D;&#x0A;- Original element: &apos;controllers.customer.JoinController.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;ncontroller" element1="/src&lt;controllers.customer{JoinController.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1670823561613" units="1" version="1.0"/>
+</session>

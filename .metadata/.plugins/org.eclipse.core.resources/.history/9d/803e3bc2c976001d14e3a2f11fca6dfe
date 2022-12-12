@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SpringWeb Annotation 연습하기</title>
+</head>
+<body>
+	<h3>TEST_1</h3>
+	<a href="hello.do">hello.do요청하기</a>
+	
+	<h3>TEST_2 : http:전송 Form : method > GET, POST > 화면을 보여주거나 처리해줘</h3>
+	<a href="article/newArticle.do">글쓰기</a>
+	
+	<h3>TEST 3: http 전송 Form method > GET, POST > List (collection)</h3>
+	<a href="order/order.do">주문하기 화면</a>
+	꒰◍ॢ•ᴗ•◍ॢ꒱
+	<h3>TEST_4 : parameter 다루기(@RequestParm)</h3>
+	Default : <a href="search/external.do">external.do</a><br>
+	Default : <a href="search/external.do?p">external.do</a><br>
+	Default : <a href="search/external.do?query=100">external.do</a><br>
+	Default : <a href="search/external.do?p=200">external.do</a><br>
+	
+	<h3>TEST_5 : Spring Cookie 사용하기</h3>
+	<a href="/cookie/make.do">make.do 서버 쿠키 전달</a><br>
+	<a href="/cookie/view.do">view.do 쿠키 읽기</a><br>
+	
+</body>
+</html>

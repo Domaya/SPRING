@@ -1,0 +1,15 @@
+package com.controller;
+
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class CookieController {
+
+	public String make(HttpServletResponse response) {
+		response.addCookie(new Cookie("auth", "1004"));
+		return "cookie/CookieMake";
+	}
+}

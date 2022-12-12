@@ -1,0 +1,16 @@
+package controllers.customer;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/joinus/")
+public class JoinController {
+	//memberDao 의존
+	
+	//GET 요청
+	//join.jsp 화면처리
+	
+	//POST요청
+	//join
+}

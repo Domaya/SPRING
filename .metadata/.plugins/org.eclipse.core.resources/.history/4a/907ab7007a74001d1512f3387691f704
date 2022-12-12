@@ -1,0 +1,29 @@
+package Spring_DI4;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		   /*
+	      //NewRecordView view = new NewRecordView(100, 50, 40);
+	      //view.print();
+
+	       NewRecordView view = new NewRecordView();
+	       //놀다가 
+	       //NewRecord 객체가 필요하면
+	       NewRecord record = new NewRecord();
+	       view.setRecord(record); //의존객체의 주소 주입(setter 함수)
+	       
+	       
+	       view.input();
+	       view.print();
+	       */
+	      
+	      ApplicationContext ontext = new ClassPathXmlApplicationContext("DIConfig.xml");
+
+	}
+
+}

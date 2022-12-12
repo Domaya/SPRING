@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SpringMVC_Basic06_WebSite_Annotation&apos; to &apos;SpringMVC_Basic06_WebSite_Annotation_jdbc_Template&apos;" description="Rename resource &apos;SpringMVC_Basic06_WebSite_Annotation&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/SpringMVC_Basic06_WebSite_Annotation" name="SpringMVC_Basic06_WebSite_Annotation_jdbc_Template" stamp="1670813146744" updateReferences="true"/>
+</session>

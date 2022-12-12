@@ -1,0 +1,5 @@
+package DI_10_Spring;
+
+public class BookClient {
+
+}

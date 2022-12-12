@@ -1,0 +1,47 @@
+package DI_11_Spring;
+
+public class DataSourceFactory {
+	private String jdbcdriver;
+	private String jdbcurl;
+	private String username;
+	private String password;
+	
+	public DataSourceFactory(String jdbcdriver, String jdbcurl, String username, String password) {
+		super();
+		this.jdbcdriver = jdbcdriver;
+		this.jdbcurl = jdbcurl;
+		this.username = username;
+		this.password = password;
+	}
+	public String getJdbcdriver() {
+		return jdbcdriver;
+	}
+	public void setJdbcdriver(String jdbcdriver) {
+		this.jdbcdriver = jdbcdriver;
+	}
+	public String getJdbcurl() {
+		return jdbcurl;
+	}
+	public void setJdbcurl(String jdbcurl) {
+		this.jdbcurl = jdbcurl;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	@Override
+	public String toString() {
+		return "DataSourceFactory [jdbcdriver=" + jdbcdriver + ", jdbcurl=" + jdbcurl + ", username=" + username
+				+ ", password=" + password + "]";
+	}
+	
+	
+}
