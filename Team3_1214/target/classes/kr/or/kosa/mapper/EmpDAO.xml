@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+	//사원전체목록
+	
+	//사원 상세
+		
+	//사원 삽입
+	
+	//사원 수정
+	
+	//사원 삭제
+
+  -->
+
+<mapper namespace="kr.or.kosa.dao.EmpDao">
+
+	<!-- 사원 전체 목록 -->
+   <select id="getEmps" resultType="kr.or.kosa.vo.Emp">
+      select * from emp
+   </select>
+
+   
+   <!-- 상세
+   Notice getNotice(String seq)
+   parameter 1개 생략가능 -->
+   <select id="getEmp" resultType="kr.or.kosa.vo.Emp">
+        select * from emp where empno=#{empno}
+  </select>
+  
+   <!-- 삭제
+   int delete(String seq)
+   parameter 1개 생략가능 -->
+   <delete id="deleteEmp">
+        delete from emp where empno=#{empno}
+  </delete>
+  
+
+
+	<!-- int upadate(Notice notice) 게시물 수정 파일 수정 : null, null 1개 수정 : 1.jpg, 
+		null 1개 수정 : null, 2.jpg 특정한 값이 넘어오지 않으면 null값 처리 -->
+	<update id="updateEmp" parameterType="kr.or.kosa.vo.Emp">
+		update emp
+		set ename=#{ename},
+		job = #{job},
+		mgr = #{mgr},
+		sal = #{sal},
+		comm = #{comm},
+		deptno = #{deptno}
+		where empno = #{empno}
+	</update>
+	
+	
+	<!-- 입력 int insert(Notice n) 
+		<selectKey order="BEFORE" keyProperty="seq"
+			resultType="String">
+			select max(to_number(seq))+1 from notices
+		</selectKey> 특정 컬럼값을 가져와서 변경시켜야할경우에 쓰는 selectKey
+	-->
+	<insert id="insertEmp" parameterType="kr.or.kosa.vo.Emp">
+		insert into emp(empno, ename, job, mgr, hiredate, sal, comm, deptno)
+		values(#{empno}, #{ename}, #{job}, #{mgr}, sysdate, #{sal}, #{comm}, #{deptno})
+
+	</insert>
+
+</mapper>

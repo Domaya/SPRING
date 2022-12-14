@@ -1,6 +1,5 @@
 INDEX VERSION 1.131+C:\KOSA_IT\Spring\Labs\.metadata\.plugins\org.eclipse.jdt.core
 664828925.index
-1918567141.index
 3831257708.index
 2175884297.index
 2369606498.index
@@ -31,12 +30,10 @@ INDEX VERSION 1.131+C:\KOSA_IT\Spring\Labs\.metadata\.plugins\org.eclipse.jdt.co
 3939197833.index
 4157715271.index
 3492281403.index
-1730825608.index
 4073725303.index
 1180229575.index
 3261230284.index
 461211329.index
-3138037318.index
 8151522.index
 2252912078.index
 2188325767.index
@@ -47,7 +44,6 @@ INDEX VERSION 1.131+C:\KOSA_IT\Spring\Labs\.metadata\.plugins\org.eclipse.jdt.co
 4063742754.index
 1924007623.index
 2450463787.index
-2038008436.index
 1745569063.index
 862960826.index
 1168128568.index
@@ -78,7 +74,6 @@ INDEX VERSION 1.131+C:\KOSA_IT\Spring\Labs\.metadata\.plugins\org.eclipse.jdt.co
 3892423595.index
 3994534542.index
 608223434.index
-4123518285.index
 2372916756.index
 3988938949.index
 2637936145.index
@@ -97,7 +92,6 @@ INDEX VERSION 1.131+C:\KOSA_IT\Spring\Labs\.metadata\.plugins\org.eclipse.jdt.co
 481515364.index
 320593021.index
 3432476088.index
-1041508058.index
 2797853187.index
 3628410671.index
 2888986208.index
@@ -114,7 +108,6 @@ INDEX VERSION 1.131+C:\KOSA_IT\Spring\Labs\.metadata\.plugins\org.eclipse.jdt.co
 984492174.index
 1545079056.index
 1866527203.index
-15123877.index
 969173964.index
 1706095055.index
 2392132505.index
@@ -160,7 +153,6 @@ INDEX VERSION 1.131+C:\KOSA_IT\Spring\Labs\.metadata\.plugins\org.eclipse.jdt.co
 837921624.index
 2230099749.index
 3382338563.index
-4282538039.index
 364986113.index
 2583213201.index
 1048350443.index
