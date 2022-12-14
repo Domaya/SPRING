@@ -471,3 +471,16 @@
 0:0:0:0:0:0:0:1 - - [12/Dec/2022:17:57:06 +0900] "GET /SpringMVC_Basic07_WebSite_Annotation/customer/images/menuMyPage.png HTTP/1.1" 404 886
 0:0:0:0:0:0:0:1 - - [12/Dec/2022:17:57:06 +0900] "GET /SpringMVC_Basic07_WebSite_Annotation/customer/images/visual.png HTTP/1.1" 404 882
 0:0:0:0:0:0:0:1 - - [12/Dec/2022:17:57:06 +0900] "GET /SpringMVC_Basic07_WebSite_Annotation/images/bgVisual.png HTTP/1.1" 404 871
+127.0.0.1 - - [12/Dec/2022:18:02:23 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [12/Dec/2022:18:02:24 +0900] "GET /SpringMVC_Basic07_WebSite_Annotation/index.htm HTTP/1.1" 200 2268
+0:0:0:0:0:0:0:1 - - [12/Dec/2022:18:02:28 +0900] "GET /SpringMVC_Basic07_WebSite_Annotation/joinus/join.htm HTTP/1.1" 200 5999
+0:0:0:0:0:0:0:1 - - [12/Dec/2022:18:02:28 +0900] "GET /SpringMVC_Basic07_WebSite_Annotation/joinus/join.css HTTP/1.1" 200 1127
+0:0:0:0:0:0:0:1 - - [12/Dec/2022:18:02:28 +0900] "GET /SpringMVC_Basic07_WebSite_Annotation/joinus/images/menuMyPage.png HTTP/1.1" 404 884
+0:0:0:0:0:0:0:1 - - [12/Dec/2022:18:02:28 +0900] "GET /SpringMVC_Basic07_WebSite_Annotation/css/joinus.css HTTP/1.1" 200 84
+0:0:0:0:0:0:0:1 - - [12/Dec/2022:18:02:28 +0900] "GET /SpringMVC_Basic07_WebSite_Annotation/joinus/images/step2.png HTTP/1.1" 200 13693
+0:0:0:0:0:0:0:1 - - [12/Dec/2022:18:02:28 +0900] "GET /SpringMVC_Basic07_WebSite_Annotation/images/bgVisual.png HTTP/1.1" 404 871
+0:0:0:0:0:0:0:1 - - [12/Dec/2022:18:02:28 +0900] "GET /SpringMVC_Basic07_WebSite_Annotation/customer/images/visual.png HTTP/1.1" 404 882
+0:0:0:0:0:0:0:1 - - [12/Dec/2022:18:02:28 +0900] "GET /SpringMVC_Basic07_WebSite_Annotation/joinus/images/btnCheckDuplicated.png HTTP/1.1" 200 3145
+0:0:0:0:0:0:0:1 - - [12/Dec/2022:18:02:28 +0900] "GET /SpringMVC_Basic07_WebSite_Annotation/joinus/images/btnOkay.png HTTP/1.1" 200 4463
+0:0:0:0:0:0:0:1 - - [12/Dec/2022:18:02:35 +0900] "POST /SpringMVC_Basic07_WebSite_Annotation/joinus/join.htm HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [12/Dec/2022:18:02:35 +0900] "GET /SpringMVC_Basic07_WebSite_Annotation/index.htm HTTP/1.1" 200 2268

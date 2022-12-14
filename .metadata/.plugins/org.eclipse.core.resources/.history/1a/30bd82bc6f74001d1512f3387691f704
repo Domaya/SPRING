@@ -1,5 +1,0 @@
-package DI3;
-
-public interface RecordView {
-
-}
