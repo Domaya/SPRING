@@ -16,5 +16,9 @@
    </bean>
    <bean id="download" name="download" class="file.DownloadView">
    </bean>
+   <bean id="pageRank" class="stat.PageRankView">
+   </bean>
+   <bean id="pageReport" class="stat.PageReportView"></bean>
+   
 
 </beans>

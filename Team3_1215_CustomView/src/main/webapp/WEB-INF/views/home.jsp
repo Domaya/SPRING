@@ -10,6 +10,8 @@
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P><br>
-<a href="${pageContext.request.contextPath}/file/1">FILE DOWNLOAD</a>
+<a href="${pageContext.request.contextPath}/file/1">FILE DOWNLOAD</a><br>
+<a href="${pageContext.request.contextPath}/pagestat/rank">EXCEL DOWNLOAD</a><br>
+<a href="${pageContext.request.contextPath}/pagestat/rankreport">Open PDF VIEWER</a>
 </body>
 </html>
