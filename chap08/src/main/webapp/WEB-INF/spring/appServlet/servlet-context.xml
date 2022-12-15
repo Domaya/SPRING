@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<!-- DownloadController bean 등록 -->
+	<bean class="net.madvirus.spring4.chap08.file.DownloadController"></bean>
+	<!-- DownloadView bean 등록 -->
+	<bean id="download" class="net.madvirus.spring4.chap08.file.DownloadView"></bean>
+	<!-- PageRankStatController bean 등록 -->
+	<bean class="net.madvirus.spring4.chap08.stat.PageRankStatController"></bean>
+	<!-- PageRankView bean 등록 -->
+	<bean id="pageRank" class="net.madvirus.spring4.chap08.stat.PageRankView"></bean>
+	<!-- PageReportView bean 등록 -->
+	<bean id="pageReport" class="net.madvirus.spring4.chap08.stat.PageReportView"></bean>
+<!--
+	<bean class="org.springframework.web.servlet.view.BeanNameViewResolver"/> 
+-->
+
+	<!--
+	BeanNameViewResolver 클래스는 뷰 이름과 동일한 이름을 갖는 빈을 뷰로 사용함
+	BeanNameViewResolver는 주로 커스텀 View 클래스를 뷰로 사용해야할 때 이용함
+	 -->
+	<bean class="org.springframework.web.servlet.view.BeanNameViewResolver">
+		<property name="order" value="0"/>
+	</bean>
+</beans>

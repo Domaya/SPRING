@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<!-- 
+	InternalResourceViewResolver
+		InternalResourceView 타입의 뷰 객체를 리턴함, 이 뷰는 JSP나 HTML 파일과 같이 웹 어플리케이션의 내부 자원을 이용해서 응답 결과 생성
+	 	JSTL이 존재할 경우 InternalResourceView 하위 타입은 JstlView 객체를 반환
+	 	internalResourceViewResolver 는 컨트롤러가 지정한 뷰 이름으로부터 실제 사용될 뷰를 선택함
+	-->
+	<bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/views/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+</beans>

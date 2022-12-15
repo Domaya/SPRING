@@ -74,6 +74,7 @@ public class EmpController {
 	@PostMapping("/emp/empEdit.htm")
 	public String edit(Emp emp, Model model) {
 		System.out.println("사원수정 매핑");
+		System.out.println(emp.toString());
 //		Emp emp = service.getEmp(Integer.parseInt(empno));
 		service.updateEmp(emp);
 		model.addAttribute("emp", emp);

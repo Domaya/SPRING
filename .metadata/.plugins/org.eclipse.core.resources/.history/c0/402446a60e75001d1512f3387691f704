@@ -1,5 +1,0 @@
-package DI_05_Spring;
-
-public interface MessageBean {
-	void sayHello(String name);
-}

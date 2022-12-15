@@ -75,3 +75,23 @@
 12월 14, 2022 17:56:47.85 [29116:20844:1214/175647.848:ERROR:device_event_log_impl.cc(215)] [17:56:47.848] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 12월 14, 2022 17:56:47.86 [29116:20844:1214/175647.848:ERROR:device_event_log_impl.cc(215)] [17:56:47.848] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 12월 14, 2022 17:57:42.70 [29116:32188:1214/175742.688:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 14, 2022 21:15:22.91 [31144:32736:1214/211522.912:ERROR:device_event_log_impl.cc(215)] [21:15:22.912] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2022 21:15:22.92 [31144:32736:1214/211522.913:ERROR:device_event_log_impl.cc(215)] [21:15:22.913] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2022 21:15:22.93 [31144:32736:1214/211522.913:ERROR:device_event_log_impl.cc(215)] [21:15:22.913] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2022 21:16:20.65 [31144:27124:1214/211620.651:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+12월 15, 2022 17:28:56.95 NEW SESSION
+12월 15, 2022 17:28:56.95 [19964:18424:1215/172856.937:ERROR:device_event_log_impl.cc(215)] [17:28:56.936] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 15, 2022 17:28:56.97 [19964:18424:1215/172856.937:ERROR:device_event_log_impl.cc(215)] [17:28:56.937] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 15, 2022 17:30:26.64 [4244:19128:1215/173026.629:ERROR:device_event_log_impl.cc(215)] [17:30:26.629] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 15, 2022 17:30:26.66 [4244:19128:1215/173026.632:ERROR:device_event_log_impl.cc(215)] [17:30:26.632] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 15, 2022 17:31:23.11 [4244:11792:1215/173123.107:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+12월 15, 2022 17:46:41.33 NEW SESSION
+12월 15, 2022 17:46:41.33 [2532:18788:1215/174641.328:ERROR:device_event_log_impl.cc(215)] [17:46:41.328] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 15, 2022 17:46:41.34 [2532:18788:1215/174641.328:ERROR:device_event_log_impl.cc(215)] [17:46:41.328] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 15, 2022 17:46:41.35 [2532:18788:1215/174641.329:ERROR:device_event_log_impl.cc(215)] [17:46:41.329] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 15, 2022 17:47:36.84 [2532:7220:1215/174736.825:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 15, 2022 18:35:28.99 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+12월 15, 2022 18:37:23.08 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+12월 15, 2022 18:42:43.87 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)

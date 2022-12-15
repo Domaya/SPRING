@@ -110,12 +110,16 @@
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
 			<item value=""/>
+			<item value="C:\KOSA_IT\Spring\Labs\SpringMVC_Basic08_Maven_Mybatis"/>
 			<item value="C:\Users\KOSA\Downloads\Sample (2)\SpringDAO_Basic4"/>
 			<item value="C:\Users\KOSA\Downloads\Sample (2)\SpringDAO_Basic3"/>
 			<item value="C:\Users\KOSA\Downloads\Sample (2)\SpringDAO_Basic2"/>
 			<item value="C:\Users\KOSA\Downloads\Sample (2)\SpringDAO_Basic1"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\KOSA\Downloads\Mybatis_.Zip"/>
+			<item value="C:\Users\KOSA\Documents\카카오톡 받은 파일\AOPtest1209.zip"/>
+			<item value="C:\Users\KOSA\Downloads\ibatis.Zip"/>
 			<item value="C:\Users\KOSA\Downloads\SpringMVC_Basic05_JdbcTemplate.Zip"/>
 			<item value="C:\Users\KOSA\Downloads\aoptest.zip"/>
 			<item value="C:\Users\KOSA\Downloads\SpringMVC_Basic02_WebSite.Zip"/>
@@ -129,5 +133,12 @@
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.wst.web.ui"/>
 		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="947"/>
+		<item key="DIALOG_Y_ORIGIN" value="416"/>
+		<item key="DIALOG_WIDTH" value="666"/>
+		<item key="DIALOG_HEIGHT" value="532"/>
+		<item key="TOGGLE_SELECTED" value="false"/>
 	</section>
 </section>
