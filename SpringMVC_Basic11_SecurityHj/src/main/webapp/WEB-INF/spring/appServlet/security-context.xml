@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-5.5.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- 
+1단계
+인증과 권한 처리(in-memory)방식 (사용자를 만들고 권한부여)TEST
+
+4.x.x 버전 이상 > 권한 > access=hasRole()
+
+인증과 권한 사용(로그인 페이지 외 로그인 처리 프로세스(코드)) ㅓㅇ의하지 않아도 Spring Template통해서 자동화 가능
+auto-config = true >> login처리에 대한 프로세스가 자동화된다
+<srf공격(방어) > csrf토큰 값을 자동으로 생성 >>disabled="rue" >> 토큰자동생성 억제
+
+ -->
+ <security:http auto-config="true">
+ 	<security:csrf disable="true" />
+ 	<security:intercept-url></security:intercept-url pttern="/customer/noticeDetail" access="hasRole('ROLE_USER)" />GJ$YMH%TRIFVK(L) 
+ </security:http>
+
+</beans>
+
+

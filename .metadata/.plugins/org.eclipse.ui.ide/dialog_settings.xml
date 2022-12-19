@@ -103,13 +103,14 @@
 		<item value="org.springsource.sts:3.9.11.201912161221-RELEASE"/>
 	</list>
 	<section name="ExternalProjectImportWizard">
-		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
-		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="true"/>
 		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
 			<item value=""/>
+			<item value="C:\Users\KOSA\Desktop\chap08\chap08"/>
 			<item value="C:\KOSA_IT\Spring\Labs\SpringMVC_Basic08_Maven_Mybatis"/>
 			<item value="C:\Users\KOSA\Downloads\Sample (2)\SpringDAO_Basic4"/>
 			<item value="C:\Users\KOSA\Downloads\Sample (2)\SpringDAO_Basic3"/>
@@ -117,6 +118,12 @@
 			<item value="C:\Users\KOSA\Downloads\Sample (2)\SpringDAO_Basic1"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\KOSA\Documents\카카오톡 받은 파일\SpringMVC_Basic09_Maven_Mybatis_POOL_LOG.zip"/>
+			<item value="C:\Users\KOSA\Documents\카카오톡 받은 파일\SpringMVC_Basic10_POOL_LOG_Trans.zip"/>
+			<item value="C:\Users\KOSA\Documents\카카오톡 받은 파일\SpringMVC_Basic10_POOL_LOG_Trans-20221215T054051Z-001.zip"/>
+			<item value="C:\Users\KOSA\Documents\카카오톡 받은 파일\ViewExcept(1).zip"/>
+			<item value="C:\Users\KOSA\Documents\카카오톡 받은 파일\ViewExcept그냥준한오빠님.zip"/>
+			<item value="C:\Users\KOSA\Documents\카카오톡 받은 파일\chap08.zip"/>
 			<item value="C:\Users\KOSA\Downloads\Mybatis_.Zip"/>
 			<item value="C:\Users\KOSA\Documents\카카오톡 받은 파일\AOPtest1209.zip"/>
 			<item value="C:\Users\KOSA\Downloads\ibatis.Zip"/>

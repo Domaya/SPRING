@@ -18,6 +18,7 @@
 	
  	<context:component-scan base-package="file" />
  	<context:component-scan base-package="stat" />
+ 	 	<context:component-scan base-package="locale" />
 	<beans:bean class="org.springframework.web.servlet.view.BeanNameViewResolver">
 		<beans:property name="order" value="0"/>
 	</beans:bean>

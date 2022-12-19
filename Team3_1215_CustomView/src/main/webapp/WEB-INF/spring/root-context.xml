@@ -12,6 +12,7 @@
 	-->
 	<!-- <bean class="org.springframework.web.servlet.view.BeanNameViewResolver" /> -->
 
+	<!-- 다운로드 -->
    <bean class="file.DownloadController">
    </bean>
    <bean id="download" name="download" class="file.DownloadView">
@@ -20,5 +21,23 @@
    </bean>
    <bean id="pageReport" class="stat.PageReportView"></bean>
    
+<!-- Locale을 컨트롤러 안만들고 파라미터로 간편히 바꿀 수 있도록 해주는 녀석 : LocaleChangeInterceptor-->
+   <!-- paramName 프로퍼티가 Locale 언어를 변경할 때 사용될 요청 파라미터의 이름 지정 , 아래의 경우 Language 파라미터 통해 Locale변경 가능-->
+
+      
+   <bean class="locale.LocaleChangeController">
+      <property name="localeResolver" ref="localeResolver" />
+   </bean>
+
+   <bean id="localeResolver"
+      class="org.springframework.web.servlet.i18n.SessionLocaleResolver" />
+
+   <mvc:interceptors>
+      <bean
+         class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+         <property name="paramName" value="language" />
+      </bean>
+   </mvc:interceptors>
+      
 
 </beans>
