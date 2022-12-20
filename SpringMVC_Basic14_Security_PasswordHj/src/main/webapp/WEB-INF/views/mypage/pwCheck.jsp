@@ -7,7 +7,7 @@
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <title>index</title>
-      <link href="join.css" type="text/css" rel="stylesheet" />
+      <link href="../joinus/join.css" type="text/css" rel="stylesheet" />
    </head>
    <body>
       <jsp:include page="/WEB-INF/views/inc/header.jsp" />
