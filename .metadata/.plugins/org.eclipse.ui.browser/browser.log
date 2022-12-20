@@ -136,3 +136,12 @@
 12월 19, 2022 17:20:51.25 [18104:996:1219/172051.237:ERROR:device_event_log_impl.cc(215)] [17:20:51.238] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 12월 19, 2022 17:20:51.26 [18104:996:1219/172051.237:ERROR:device_event_log_impl.cc(215)] [17:20:51.238] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 12월 19, 2022 17:21:47.99 [18104:4072:1219/172147.983:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 19, 2022 22:21:47.99 [18104:20176:1219/222147.988:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 20, 2022 03:21:48.00 [18104:20176:1220/032147.998:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 20, 2022 08:21:48.02 [18104:10308:1220/082148.014:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 20, 2022 13:21:48.05 [18104:19856:1220/132148.029:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 20, 2022 14:49:51.70 [15664:21556:1220/144951.698:ERROR:device_event_log_impl.cc(215)] [14:49:51.698] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 20, 2022 14:49:51.71 [15664:21556:1220/144951.698:ERROR:device_event_log_impl.cc(215)] [14:49:51.698] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 20, 2022 14:49:51.72 [15664:21556:1220/144951.698:ERROR:device_event_log_impl.cc(215)] [14:49:51.698] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 20, 2022 14:50:48.43 [15664:20436:1220/145048.427:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 20, 2022 19:50:48.46 [15664:23488:1220/195048.453:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater

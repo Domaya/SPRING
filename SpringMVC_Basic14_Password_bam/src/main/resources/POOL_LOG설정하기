@@ -1,0 +1,97 @@
+1. pom.xml 설정하기
+	    <dependency>
+			<groupId>com.zaxxer</groupId>
+			<artifactId>HikariCP</artifactId>
+			<version>3.4.5</version>
+		</dependency>
+----------------------------------------------------------------------------------
+<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
+ 		<property name="driverClassName" value="oracle.jdbc.pool.OracleDataSource"></property>
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@URL주소:1521:시드명"></property> 
+         <!-- Oracle 11g 경우 value="jdbc:oracle:thin:@URL주소:1521:XE" -->
+         <!-- Oracle 19  경우 value="jdbc:oracle:thin:@URL주소:1521:orcl" -->
+		<property name="username" value="계정명"></property>
+		<property name="password" value="비밀번호"></property>
+	</bean>	
+	
+<bean id="datasource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+		<constructor-arg ref="hikariConfig"></constructor-arg>
+</bean>
+
+----------------------------------------------------------------------
+<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
+	<property name="driverClassName" value="org.mariadb.jdbc.Driver"></property>
+	<property name="jdbcUrl" value="jdbc:mariadb://localhost:3306/test_database"></property>
+	<property name="username" value="root"></property>
+	<property name="password" value="root"></property>
+</bean>
+	
+<!-- 2번 항목에서 설정한 HikariDataSource -->
+<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method ="close">
+	<constructor-arg ref="hikariConfig" />
+</bean>
+
+<!--  SqlSessionFactory -->
+<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+	<property name="dataSource" ref="dataSource"></property>
+</bean>
+-----------------------------------------------------------------------
+
+1.
+pom.xml
+		<!-- SQL LOG  -->
+		<dependency>
+		    <groupId>org.bgee.log4jdbc-log4j2</groupId>
+		    <artifactId>log4jdbc-log4j2-jdbc4</artifactId>
+		    <version>1.16</version>
+		</dependency>
+추가하기
+
+2.
+DB연결 설정에서 DriverSpy 적용하기
+<!-- <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" /> -->
+ 	<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy" />
+ 	<property name="url" value="jdbc:log4jdbc:oracle:thin:@localhost:1521:XE" />
+ 	
+3.설정파일 
+log4j.xml 같은 경로에
+log4jdbc.log4j2.properties 파일 생성
+
+log4jdbc.spylogdelegator.name=net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator
+
+
+xml 추가
+<!-- SQL Logger -->
+
+	<logger name="jdbc.sqltiming" additivity="false">
+		<level value="warn" />
+		<appender-ref ref="console"/> 
+	</logger>
+
+	
+
+	<logger name="jdbc.sqlonly" additivity="false"> 
+		<level value="info"/> 
+		<appender-ref ref="console"/> 
+	</logger>
+
+	
+
+	<logger name="jdbc.audit" additivity="false"> 
+		<level value="warn"/>  
+		<appender-ref ref="console"/> 
+	</logger> 
+
+    
+
+	<logger name="jdbc.resultset" additivity="false">
+		<level value="warn" />
+		<appender-ref ref="console"/> 
+	</logger>
+
+     
+
+	<logger name="jdbc.resultsettable" additivity="false"> 
+		<level value="info"/>  
+		<appender-ref ref="console"/> 
+	</logger> 

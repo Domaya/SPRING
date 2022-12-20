@@ -3,7 +3,7 @@
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:security="http://www.springframework.org/schema/security"
-	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-5.5.xsd
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
@@ -19,8 +19,8 @@ auto-config = true >> login처리에 대한 프로세스가 자동화된다
 
  -->
  <security:http auto-config="true">
- 	<security:csrf disable="true" />
- 	<security:intercept-url></security:intercept-url pttern="/customer/noticeDetail" access="hasRole('ROLE_USER)" />GJ$YMH%TRIFVK(L) 
+ 	<security:csrf disabled="true" />
+ 	<security:intercept-url pattern="/customer/noticeDetail" access="hasRole('ROLE_USER)" /> 
  </security:http>
 
 </beans>
