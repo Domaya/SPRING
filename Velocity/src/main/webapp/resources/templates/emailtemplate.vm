@@ -1,0 +1,6 @@
+Dear ${firstName} ${lastName}
+ 
+Sending Email Using Spring Smtp Email + Velocity Template from ${location} location.
+From 한국소프트웨어산업협회
+
+Thanks!
